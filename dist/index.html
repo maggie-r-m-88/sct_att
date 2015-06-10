@@ -1,0 +1,599 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>att</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="header-logo"><img src=""/>
+      </div>
+      <div class="user-dashboard">
+        <div class="username-menu dropdown">
+           <a class=" dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"><span id="username">Maggie Martin</span><i class="fa fa-angle-down"></i>
+           </a>
+           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+             <li role="presentation"><a data-toggle="modal" role="menuitem" tabindex="-1" href="#">Select Group</a></li>
+             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">User Settings</a></li>
+             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Preferences</a></li>
+             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
+
+           </ul>
+         </div>
+           <a href="#"><li><i class="fa fa-question-circle"></i></li></a>
+           <a href="#"><li><i class="fa fa-cog"></i></li></a>
+      </div>
+
+    <div id="toggle-top" class="clearfix">
+    <button>Full Screen</button>
+    </div>
+
+    </header>
+
+
+    <div id="wrapper" >
+    <!-- Sidebar -->
+      <!-- Sidebar -->
+
+  <!-- Page content -->
+    <div id="page-content-wrapper">
+      <div class="tab-container">
+        <ul class="nav nav-tabs">
+             <li class="active"><a data-toggle="tab" href="#create-wo-tab"><i class="fa fa-file-o"></i>Create Work Order</a></a></li>
+
+             <li><a data-toggle="tab" href="#update-work-order"><i class="fa fa-pencil-square-o"></i>Update Work Order</a></li>
+
+
+
+        </ul>
+      </div><!--end of tab container-->
+
+      <div class="tab-content"><!---Secondary Navigation tab content goes here-->
+        <div id="create-wo-tab" class="tab-pane fade in active">
+          <div class="work-order-list-container">
+            TAB 1 Content
+          </div><!---end of work order list container-->
+        </div><!--end of work order list-->
+
+
+    <div id="search-form" class="tab-pane fade">
+       <div class="search-form-container">
+          TAB 2
+       </div><!--end of search form container-->
+    </div><!--end of tab content-->
+
+  <div id="update-work-order" class="tab-pane fade">
+    <div class="update-work-order-container">
+        <div class="work-order-list-console updatescreen " style="background:none;border:none;">
+           <div style="float:left;">
+              <span class="work-order-title">WO058358</span>
+              <span class="work-order-title">.Shipped to Customer</span>
+            </div>
+
+            <div style="float:right;">
+              <div class="search-console-toggle">
+                <li id="queue-input"><a href="#">Queue Input</a></li>
+                <li id="find-input" class="current"><a href="#">Find</a></li>
+              </div>
+
+              <div class="find-input">
+                <div class="dropdown" style="padding-top:5px;" >
+                  <a class=" dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"> <span id="find-wo" class="dropdown-toggle-item">W.O Code</span> <i class="fa fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" id="update-find-wo" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a data-toggle="modal" role="menuitem" tabindex="-1" >W.O. Code</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Serial</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Serial #</a></li>
+                  </ul>
+                 </div><!---end of dropdown for find-->
+
+                 <span class="console-search"><i class="fa fa-search"></i></span> <input id="search-input"  style="width:150px;" type="search" class="form-control"  />
+                   <div class="btn-group btn-group-sm" role="group">
+                     <button id="search-popout" type="submit" class="btn btn-default toggler small" data-prod-cat="1"><span><i class="fa fa-unlock-alt small" ></i></span></button>
+                     <button type="submit" class="btn btn-default small" >Clear</button>
+                  </div>
+              </div>
+
+          <!---end of find-->
+
+
+           <div class="queue-input hide-input">
+             <div class="dropdown" style="padding-top:5px;"  >
+                <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true" ><span id="queue-input-dropdown" class="dropdown-toggle-item">This Week</span><i class="fa fa-angle-down"></i>
+                </a>
+               <ul id="queue-input-time" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+                 <li role="presentation"><a data-toggle="modal" role="menuitem" tabindex="-1" >Today</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Yesterday</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Last 3 Days</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Last Week</a></li>
+               </ul>
+             </div><!---end of dropdown for qinput-->
+
+             <select class="work-order-views form-control" style="margin-top:0;">
+               <option value="one">--Default--</option>
+             </select>
+            <button type="submit" class="btn btn-primary small">Get Next</button>
+
+           </div><!---end of queue input-->
+         </div>
+
+    <div class="clearfix" >
+      <ul class="nav nav-pills progress-tabs" >
+        <li role="presentation" class="active" ><a href="#progress-pane1" data-toggle="tab">Triage</a></li>
+        <li role="presentation "><a href="#progress-pane1" data-toggle="tab">Assessment</a></li>
+        <li role="presentation"><a href="#progress-pane1" data-toggle="tab">Repair</a></li>
+        <li role="presentation"><a href="#progress-pane1" data-toggle="tab">Quality</a></li>
+        <li role="presentation" ><a href="#progress-pane1" data-toggle="tab">Return</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+
+  <div class="tab-content"><!---progres tab content begins here-->
+    <div id="progress-pane1" class="tab-pane fade-in active">
+
+     <div class="clearfix">
+     </div>
+    <div class="update-work-order-body">
+      <section>
+       <dt><h3 class="panel-title small grid-panel">
+           <i class="fa fa-minus-circle"></i>Summary</h3>
+       </dt>
+       <dd>
+         <div id="static-work-order-info" class="work-order-info-grid clearfix">
+           <div class="tri-column">
+
+               <p class="alignleft">WO Code:</p>
+               <p class="alignright"><span>WO189039</span></p>
+
+               <p class="alignleft">Status:</p>
+               <p class="alignright"><span>In Repair</span></p>
+
+               <p class="alignleft">Program:</p>
+               <p class="alignright">Repair Process</p>
+
+           </div><!--end of tricolumn1-->
+
+           <div class="tri-column">
+
+            <p class="alignleft">Serial #:</p>
+            <p class="alignright">1839401XU93Z83029</p>
+
+
+           <p class="alignleft">Manufacturer:</p>
+           <p class="alignright">Motorola</p>
+
+
+          <p class="alignleft">Model:</p>
+          <p class="alignright">Moto X 64</p>
+
+         </div><!--end of tri-column 2-->
+
+         <div class="tri-column">
+
+            <p class="alignleft">Warranty Status:</p>
+            <p class="alignright"><span>In Warranty</span></p>
+
+
+           <p class="alignleft">Warranty End Date:</p>
+           <p class="alignright">12/19/2015</p>
+
+          <p class="alignleft">Last Update:</p>
+          <p class="alignright">02/27/2015</p>
+
+
+        </div><!--end of tri column-->
+        </div><!---end of work order info grid-->
+       </dd>
+     </dt>
+  </section>
+  <section>
+      <dt>
+          <h3 class="panel-title small grid-panel"><i class="fa fa-minus-circle"></i>Work Order   </h3>
+      </dt>
+      <dd>
+      <div id="change-work-order-info"class="work-order-info-grid" >
+
+        <div class="tri-column">
+
+             <p class="alignleft">Trouble Code:</p>
+             <p class="alignright"><input type="text" value="3298938" readonly="readonly" ></p>
+
+           <p class="alignleft">Airtime Minutes:</p>
+           <p class="alignright"> <input required>    </p>
+
+
+           <p class="alignleft">Device Condition:</p>
+           <p class="alignright">
+
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineCheckbox1" value="option1"> Damaged
+             </label>
+             <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> Fair
+              </label>
+           </p>
+
+        </div><!--end of tricolumn1-->
+
+        <div class="tri-column">
+
+            <p class="alignleft">Condition Code:</p>
+            <p class="alignright"><input></p>
+
+           <p class="alignleft">Software Ver In:</p>
+           <p class="alignright"> <input type="test" value="04/05/2015 9:24 AM" readonly="readonly" required></p>
+
+          <p class="alignleft">Software Ver Out:</p>
+          <p class="alignright"> <input required></p>
+
+
+        </div><!--end of tri-column 2-->
+
+        <div class="tri-column">
+
+            <p class="alignleft">Drop Status:</p>
+            <p class="alignright"><input type="checkbox"></p>
+
+           <p class="alignleft">Repair End Date:</p>
+           <p class="alignright"><input></p>
+
+          <p class="alignleft">Warranty Code:</p>
+          <p class="alignright"><input></p>
+
+
+      </div><!--end of tri column-->
+
+    </div><!---end of work order info grid-->
+  </dd>
+  </dt>
+  </section>
+
+  
+  <section>
+    <dt>
+   </dt>
+   <dd>
+  <div style="border-top:none;">
+      <div class="action-button-container">
+         <div id="action-buttons">
+           <div style="float:left;">
+             <button id="Finish-Repair-Button"type="button" class="btn btn-primary small" style=" margin-right:10px">Finish Repair</button>
+             <button id="Expedite-Button" type="button" class="btn btn-primary small" style=" margin-right:10px">Awaiting Parts</button>
+             <button type="button" class="btn btn-primary small" style=" margin-right:10px">Cannot Repair</button>
+           </div>
+           <div style="float:right;">
+             <div class="btn-group">
+
+           <button  class="btn btn-default small" style="margin-left:10px;"><i style="padding-left: 5px;" class="fa fa-print"></i>Print
+             <button type="button" class="btn btn-default small dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span>
+             </button>
+
+             <ul class="dropdown-menu" role="menu">
+
+              <li><a href="#">Print This</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+             </ul>
+
+
+         </div>
+
+             <button  class="btn btn-danger small" style=" margin-left:10px;"><i class="fa fa-ban" style="padding-left: 5px;"></i>Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="clearfix">
+
+  </div>
+
+  <ul class="nav nav-tabs product-table small"  id="product-table" style="margin-top:10px;">
+    <li><a href="#1" data-toggle="tab">Status History <span class="badge">3</span></a>
+
+    </li>
+    <li><a href="#2" data-toggle="tab">Attachments<span class="badge">1</span></a>
+
+    </li>
+    <li><a href="#3" data-toggle="tab">Notes<span class="badge">1</span></a>
+
+
+    </li>
+    <li><a href="#4" data-toggle="tab">Service Bulletins<span class="badge">2</span></a>
+
+    </li>
+
+    <li><a href="#5" data-toggle="tab" >Product WO History</a>
+
+    </li>
+
+    <li><a href="#6" data-toggle="tab">Manifest History</a>
+
+    </li>
+
+
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane" id="1">
+      <table class="table table-condensed volumes small referenceTable" >
+        <thead>
+          <tr>
+            <th>Update Time Local</th>
+            <th>Status</th>
+            <th>User Name</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2/16/2015 2:35 PM</td>
+            <td>!QA Passed</td>
+            <td>Mark Riley</td>
+
+          </tr>
+          <tr>
+            <td>2/16/2015 11:13 AM</td>
+            <td>*Software Passed</td>
+            <td>Steve Teel</td>
+
+          </tr>
+          <tr>
+            <td>2/13/2015 5:39 PM</td>
+            <td>Awaiting Parts</td>
+            <td>Maggie Martin</td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <div class="table-footer small clearfix" style="margin-top:-20px;">
+        <p id="how-many">Displaying 1-3 of 3 status updates</p>
+
+
+        <ul class="pagination">
+
+          <li><a href="#">&laquo;</a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">&raquo;</a></li>
+        </ul>
+
+      </div>
+
+
+    </div>
+    <div class="tab-pane " id="2"><!---attachments pane-->
+
+      <table class="table table-condensed small volumes referenceTable">
+        <thead>
+          <tr>
+            <th> <button type="button" class="btn btn-default small" data-toggle="modal" href="#newAttachmentModal" >New</button>
+            </th>
+            <th>Filename    </th>
+            <th>Size(kb)</th>
+            <th>Description</th>
+            <th>Create Timestamp Local</th>
+          </tr>
+        </thead>
+         <tr>
+           <td><a href="#"></a></td>
+           <td><a href="#">Customer Notes</a></td>
+           <td>75.2</td>
+           <td>Conversation with Owner</td>
+           <td>3/4/2015 6:19 AM EST</td>
+         </tr>
+      </table>
+      <div class="table-footer small clearfix" style="margin-top:-20px;">
+
+
+
+
+      </div>
+      <!---beginning of new attachment modal-->
+      <div id="newAttachmentModal" class="modal fade">
+              <div class="modal-dialog large-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title">New Attachment</h4>
+                      </div>
+                      <div class="modal-body">
+
+                        <p class="text-warning"><small>Please enter the following information to add a new part to the database.</small></p>
+                        <div class="work-order-info-grid">
+                          <div class="clearfix">
+                            <p class="alignleft-dbl">File Name:</p>
+                            <p class="alignright-dbl"><input type="file"> </p>
+                          </div>
+                          <div class="clearfix">
+                            <p class="alignleft-dbl">Description:</p>
+                            <p class="alignright-dbl"><input> </p>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+      <!---end of new part modal-->
+    </div>
+    <div class="tab-pane" id="3">
+
+      <table class="table table-condensed small volumes referenceTable">
+        <thead>
+          <tr>
+            <th><button type="button" class="btn btn-default small"  data-toggle="modal" href="#newNoteModal">New</button>
+            </th>
+            <th>Typecode   </th>
+            <th>Note</th>
+            <th>User Name</th>
+            <th>Created</th>
+            <th>Relate to Work Order</th>
+            <th>Relate to Product Unit</th>
+
+          </tr>
+        </thead>
+         <tr>
+           <td></td>
+           <td>Comments</td>
+           <td>Overdue</td>
+           <td>Maggie Martin</td>
+           <td>4/28/2015 6:21 PM</td>
+           <td>True</td>
+           <td>False </td>
+         </tr>
+      </table>
+      <div class="table-footer small clearfix" style="margin-top:-20px;">
+
+      </div>
+      <!---beginning of new attachment modal-->
+      <div id="newNoteModal" class="modal fade">
+              <div class="modal-dialog large-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title">New Note</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p class="text-warning"><small>Please enter the following information and click "save" to save the note.</small></p>
+                        <div class="work-order-info-grid" >
+                          <div class="clearfix">
+                            <p class="alignleft-dbl">Type:</p>
+                            <p class="alignright-dbl"><input></p>
+                          </div>
+                          <div class="clearfix">
+                            <p class="alignleft-dbl">Note User:</p>
+                            <p class="alignright-dbl">Maggie Martin </p>
+                          </div>
+                          <div class="clearfix">
+                            <p class="alignleft-dbl">Customer Viewable:</p>
+                            <p class="alignright-dbl"><input type="checkbox"> </p>
+                          </div>
+                          <div class="clearfix">
+                            <p class="alignleft-dbl">Note:</p>
+                            <p class="alignright-dbl" style="height:auto;"><textarea rows="3"></textarea> </p>
+                          </div>
+                        </div>
+                         <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                             <button type="button" class="btn btn-primary">Save</button>
+                         </div>
+
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+
+      <!---end of new part modal-->
+
+
+    </div>
+
+
+    <div class="tab-pane" id="4">
+      <table class="table table-condensed volumes small referenceTable">
+        <thead>
+          <tr>
+            <th>Work Order Code</th>
+            <th>Archived</th>
+            <th>Status Description</th>
+            <th>Serial #</th>
+            <th>Manufacturer Serial #</th>
+            <th>Exchange Serial #</th>
+            <th>Date Completed</th>
+            <th>Customer Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a data-toggle="tab" href="#3">WOO58539</a></td>
+            <td>False</td>
+            <td>Shipped to Customer</td>
+            <td>909898787676765</td>
+            <td>000001928A44EE</td>
+            <td>XXP101000082717</td>
+            <td>12/19/2014 5:27 PM</td>
+
+            <td>Mark Riley</td>
+
+          </tr>
+
+          <tr>
+            <td><a href="#">WOO58540</a></td>
+            <td>False</td>
+            <td>Shipped to Customer</td>
+            <td>909898700176765</td>
+            <td>000009928A44EE</td>
+            <td>XXP101000082717</td>
+            <td>5/23/2014 8:14 AM</td>
+            <td>Mark Riley</td>
+
+          </tr>
+
+
+        </tbody>
+      </table>
+      <div class="table-footer small clearfix" style="margin-top:-20px;">
+
+
+      </div>
+
+
+      </div>
+     </div>
+
+
+    </dd>
+  </section>
+
+  </div><!---end of work order body-->
+
+
+  </div><!---end of progress-pane1-->
+
+
+
+  </div><!--end of update work order container-->
+
+  </div><!--end of update work order-->
+
+
+  </div>  <!--end of tab content--> <!-- Keep all page content within the page-content inset div! -->
+
+
+  </div>   <!--end of wrapper-->
+
+    <script src="scripts/vendor.js"></script>
+
+        <script src="scripts/main.js"></script>
+</body>
+</html>
