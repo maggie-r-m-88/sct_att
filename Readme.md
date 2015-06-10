@@ -1,3 +1,3 @@
-## Yo, I'm a Readme
+## SCT ServiceManagar ATT Prototype
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+To be viewed on Ipad Safari browser
