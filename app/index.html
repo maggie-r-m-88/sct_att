@@ -80,71 +80,104 @@
             </div>
             <div class="update-work-order-body">
               <section>
-              <div id="work-order-info-grid ">
+              <div id="work-order-info-grid" style="margin-top:10px;">
                 <div class="double-column">
-                  <p class="alignleft-dbl">Program ID:</p>
-                  <p class="alignright-dbl"><input> </p>
-                </div>
-                <div class="double-column">
-                  <p class="alignleft-dbl">Transaction ID:</p>
-                  <p class="alignright-dbl"><input> </p>
+                  <div class="clearfix">
+                    <p class="alignleft-dbl">Program ID:</p>
+                    <p class="alignright-dbl"><input> </p>
+                  </div>
+                  <div class="clearfix">
+                    <p class="alignleft-dbl">Transaction ID:</p>
+                    <p class="alignright-dbl"><input> </p>
+                  </div>
                 </div>
               </div>
               </section>
+              <div class="clearfix"></div>
               <section>
                <dt><h3 class="panel-title small grid-panel">
-                   <i class="fa fa-minus-circle"></i>Summary</h3>
+                   <i class="fa fa-minus-circle"></i>Customer</h3>
                </dt>
                <dd>
                  <div id="static-work-order-info" class="work-order-info-grid clearfix">
-                   <div class="tri-column">
-
-                       <p class="alignleft">WO Code:</p>
-                       <p class="alignright"><span>WO189039</span></p>
-
-                       <p class="alignleft">Status:</p>
-                       <p class="alignright"><span>In Repair</span></p>
-
-                       <p class="alignleft">Program:</p>
-                       <p class="alignright">Repair Process</p>
-
-                   </div><!--end of tricolumn1-->
-
-                   <div class="tri-column">
-
-                    <p class="alignleft">Serial #:</p>
-                    <p class="alignright">1839401XU93Z83029</p>
-
-
-                   <p class="alignleft">Manufacturer:</p>
-                   <p class="alignright">Motorola</p>
-
-
-                  <p class="alignleft">Model:</p>
-                  <p class="alignright">Moto X 64</p>
-
-                 </div><!--end of tri-column 2-->
-
-                 <div class="tri-column">
-
-                    <p class="alignleft">Warranty Status:</p>
-                    <p class="alignright"><span>In Warranty</span></p>
-
-
-                   <p class="alignleft">Warranty End Date:</p>
-                   <p class="alignright">12/19/2015</p>
-
-                  <p class="alignleft">Last Update:</p>
-                  <p class="alignright">02/27/2015</p>
-
-
-                </div><!--end of tri column-->
+                   <div class="double-column">
+                     <div class="clearfix">
+                       <p class="alignleft-dbl">Customer Lookup:</p>
+                       <p class="alignright-dbl"><input> </p>
+                   </div>
+                     <div class="clearfix">
+                       <p class="alignleft-dbl">Full Name:</p>
+                       <p class="alignright-dbl"><input> </p>
+                     </div>
+                   </div>
+                   <div class="double-column">
+                     <div class="clearfix">
+                       <p class="alignleft-dbl">Mobile Phone:</p>
+                       <p class="alignright-dbl"><input> </p>
+                     </div>
+                     <div class="clearfix">
+                       <p class="alignleft-dbl">Company Name:</p>
+                       <p class="alignright-dbl"><input> </p>
+                     </div>
+                   </div>
                 </div><!---end of work order info grid-->
                </dd>
+            </section>
+            <section>
+             <dt><h3 class="panel-title small grid-panel">
+                 <i class="fa fa-minus-circle"></i>Product Unit</h3>
              </dt>
+             <dd>
+               <div id="static-work-order-info" class="work-order-info-grid clearfix">
+                 <div class="double-column">
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Manufacturer:</p>
+                     <p class="alignright-dbl"><input> </p>
+                 </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Model:</p>
+                     <p class="alignright-dbl"><input> </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">IMEI #:</p>
+                     <p class="alignright-dbl"><input> </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Warranty Start Date:</p>
+                     <p class="alignright-dbl"></p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Warranty End Date:</p>
+                     <p class="alignright-dbl"><input> </p>
+                   </div>
+                 </div>
+                 <div class="double-column">
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Purchase Date:</p>
+                     <p class="alignright-dbl"><input> </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Refurbished Device?:</p>
+                     <p class="alignright-dbl"><input type="checkbox"> </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Last Exchange Date:</p>
+                     <p class="alignright-dbl"><input> </p>
+                   </div>
+                 </div>
+              </div><!---end of work order info grid-->
+             </dd>
           </section>
+          <section>
+           <dt><h3 class="panel-title small grid-panel">
+               <i class="fa fa-minus-circle"></i>Service Ticket</h3>
+           </dt>
+           <dd>
 
-            </div>
+           </dd>
+        </section>
+
+      </div><!---end of work order body-->
 
 
           </div><!---end of work order list container-->

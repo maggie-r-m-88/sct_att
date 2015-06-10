@@ -34,9 +34,9 @@
            <a href="#"><li><i class="fa fa-cog"></i></li></a>
       </div>
 
-    <div id="toggle-top" class="clearfix">
+  <!--  <div id="toggle-top" class="clearfix">
     <button>Full Screen</button>
-    </div>
+  </div>-->
 
     </header>
 
@@ -49,9 +49,9 @@
     <div id="page-content-wrapper">
       <div class="tab-container">
         <ul class="nav nav-tabs">
-             <li class="active"><a data-toggle="tab" href="#create-wo-tab"><i class="fa fa-file-o"></i>Create Work Order</a></a></li>
+             <li class="active"><a data-toggle="tab" href="#create-wo-tab"><i class="fa fa-file-o"></i>Create Service Ticket</a></a></li>
 
-             <li><a data-toggle="tab" href="#update-work-order"><i class="fa fa-pencil-square-o"></i>Update Work Order</a></li>
+             <li><a data-toggle="tab" href="#update-work-order"><i class="fa fa-pencil-square-o"></i>Update Service Ticket</a></li>
 
 
 
@@ -61,7 +61,116 @@
       <div class="tab-content"><!---Secondary Navigation tab content goes here-->
         <div id="create-wo-tab" class="tab-pane fade in active">
           <div class="work-order-list-container">
-            TAB 1 Content
+            <div class="work-order-list-console">
+
+              <ul class="nav nav-pills progress-tabs" >
+                <li role="presentation" class="active" ><a href="#progress-pane1" data-toggle="tab">Start</a></li>
+
+              </ul>
+
+            </div>
+            <div class="update-work-order-body">
+              <section>
+              <div id="work-order-info-grid" style="margin-top:10px;">
+                <div class="double-column">
+                  <div class="clearfix">
+                    <p class="alignleft-dbl">Program ID:</p>
+                    <p class="alignright-dbl"><input> </p>
+                  </div>
+                  <div class="clearfix">
+                    <p class="alignleft-dbl">Transaction ID:</p>
+                    <p class="alignright-dbl"><input> </p>
+                  </div>
+                </div>
+              </div>
+              </section>
+              <div class="clearfix"></div>
+              <section>
+               <dt><h3 class="panel-title small grid-panel">
+                   <i class="fa fa-minus-circle"></i>Customer</h3>
+               </dt>
+               <dd>
+                 <div id="static-work-order-info" class="work-order-info-grid clearfix">
+                   <div class="double-column">
+                     <div class="clearfix">
+                       <p class="alignleft-dbl">Customer Lookup:</p>
+                       <p class="alignright-dbl"><input> </p>
+                   </div>
+                     <div class="clearfix">
+                       <p class="alignleft-dbl">Full Name:</p>
+                       <p class="alignright-dbl"><input> </p>
+                     </div>
+                   </div>
+                   <div class="double-column">
+                     <div class="clearfix">
+                       <p class="alignleft-dbl">Mobile Phone:</p>
+                       <p class="alignright-dbl"><input> </p>
+                     </div>
+                     <div class="clearfix">
+                       <p class="alignleft-dbl">Company Name:</p>
+                       <p class="alignright-dbl"><input> </p>
+                     </div>
+                   </div>
+                </div><!---end of work order info grid-->
+               </dd>
+            </section>
+            <section>
+             <dt><h3 class="panel-title small grid-panel">
+                 <i class="fa fa-minus-circle"></i>Product Unit</h3>
+             </dt>
+             <dd>
+               <div id="static-work-order-info" class="work-order-info-grid clearfix">
+                 <div class="double-column">
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Manufacturer:</p>
+                     <p class="alignright-dbl"><input> </p>
+                 </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Model:</p>
+                     <p class="alignright-dbl"><input> </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">IMEI #:</p>
+                     <p class="alignright-dbl"><input> </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Warranty Start Date:</p>
+                     <p class="alignright-dbl"></p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Warranty End Date:</p>
+                     <p class="alignright-dbl"><input> </p>
+                   </div>
+                 </div>
+                 <div class="double-column">
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Purchase Date:</p>
+                     <p class="alignright-dbl"><input> </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Refurbished Device?:</p>
+                     <p class="alignright-dbl"><input type="checkbox"> </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Last Exchange Date:</p>
+                     <p class="alignright-dbl"><input> </p>
+                   </div>
+                 </div>
+              </div><!---end of work order info grid-->
+             </dd>
+          </section>
+          <section>
+           <dt><h3 class="panel-title small grid-panel">
+               <i class="fa fa-minus-circle"></i>Service Ticket</h3>
+           </dt>
+           <dd>
+
+           </dd>
+        </section>
+
+      </div><!---end of work order body-->
+
+
           </div><!---end of work order list container-->
         </div><!--end of work order list-->
 
@@ -82,7 +191,7 @@
 
             <div style="float:right;">
               <div class="search-console-toggle">
-                <li id="queue-input"><a href="#">Queue Input</a></li>
+
                 <li id="find-input" class="current"><a href="#">Find</a></li>
               </div>
 
@@ -107,24 +216,7 @@
           <!---end of find-->
 
 
-           <div class="queue-input hide-input">
-             <div class="dropdown" style="padding-top:5px;"  >
-                <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true" ><span id="queue-input-dropdown" class="dropdown-toggle-item">This Week</span><i class="fa fa-angle-down"></i>
-                </a>
-               <ul id="queue-input-time" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-                 <li role="presentation"><a data-toggle="modal" role="menuitem" tabindex="-1" >Today</a></li>
-                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Yesterday</a></li>
-                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Last 3 Days</a></li>
-                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Last Week</a></li>
-               </ul>
-             </div><!---end of dropdown for qinput-->
 
-             <select class="work-order-views form-control" style="margin-top:0;">
-               <option value="one">--Default--</option>
-             </select>
-            <button type="submit" class="btn btn-primary small">Get Next</button>
-
-           </div><!---end of queue input-->
          </div>
 
     <div class="clearfix" >
@@ -261,7 +353,7 @@
   </dt>
   </section>
 
-  
+
   <section>
     <dt>
    </dt>
