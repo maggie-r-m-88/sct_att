@@ -29,7 +29,7 @@
       </div>
       <div class="user-dashboard">
         <div class="username-menu dropdown">
-           <a class=" dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"><span id="username">Maggie Martin</span><i class="fa fa-angle-down"></i>
+           <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" href="#"><span id="username">Maggie Martin</span><i class="fa fa-angle-down"></i>
            </a>
            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
              <li role="presentation"><a data-toggle="modal" role="menuitem" tabindex="-1" href="#">Select Group</a></li>
@@ -61,6 +61,8 @@
              <li class="active"><a data-toggle="tab" href="#create-wo-tab"><i class="fa fa-file-o"></i>Create Service Ticket</a></a></li>
 
              <li><a data-toggle="tab" href="#update-work-order"><i class="fa fa-pencil-square-o"></i>Update Service Ticket</a></li>
+
+             <li><a data-toggle="tab" href="#search-form"><i class="fa fa-pencil-square-o"></i>Testing</a></li>
 
 
 
@@ -245,7 +247,7 @@
                    <p class="alignright-dbl"><input type="checkbox"> </p>
                  </div>
                  <div class="clearfix">
-                   <p class="alignleft-dbl">Warranty Status</p>
+                   <p class="alignleft-dbl">Warranty Status:</p>
                    <p class="alignright-dbl">In Warranty</p>
                  </div>
                </div>
@@ -256,7 +258,7 @@
         <section>
           <div class="action-button-container">
              <div id="action-buttons">
-               <div style="float:left;">
+               <div style="float:left; margin-bottom:15px;">
                  <button id="Finish-Repair-Button"type="button" class="btn btn-primary" style=" margin-right:20px"><i class="fa fa-flask"></i>Begin Test</button>
                  <button id="Expedite-Button" type="button" class="btn btn-primary" style=" margin-right:20px"><i class="fa fa-ticket"></i>Quick Ticket</button>
 
@@ -275,10 +277,73 @@
 
 
     <div id="search-form" class="tab-pane fade">
-       <div class="search-form-container">
-          TAB 2
+         <div class="work-order-list-container">
+           <div class="work-order-title">
+
+            <span class="ticket-id">WO9054218</span>
+            <span class="ticket-id">WO Info Back</span>
+              <div style="float:right; margin-right:20px;">
+                <p style="float:left;margin-right:10px;">  <b>Find:</b></p>
+                <div class="dropdown open" style="float:left;">
+                <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" href="#">
+                  <span class="dropdown-toggle-item">
+                    IMEI #<i class="fa fa-angle-down"></i>
+                  </span>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby"dropdownMenu2">
+                  <li role="presentation"><a data-toggle="modal" role="menuitem" tabindex="-1">W.O. Code</a></li>
+                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Serial</a></li>
+                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Serial #</a></li>
+                </ul>
+              </div>
+
+              <div style="float:left;margin-left:5px;">
+                <i class="fa fa-search" style="position:absolute;margin:9px;opacity:.4;font-size:14px;"></i>
+                <input id="service-ticket-search" style="margin-top:-2px;">
+
+                <div class="btn-group btn-group-sm" role="group">
+                     <button id="search-popout" type="submit" class="btn btn-default toggler small" data-prod-cat="1"><span><i class="fa fa-unlock-alt small"></i></span></button>
+                     <button type="submit" class="btn btn-default small">Clear</button>
+                  </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+           <div class="work-order-list-console" style="margin-top:15px;">
+
+
+             <ul class="nav nav-pills progress-tabs" >
+               <li role="presentation" class="active" ><a href="#serviceTicketInfo" data-toggle="tab" role="tab">Service Ticket Info</a></li>
+               <li role="presentation" ><a href="#resolution" data-toggle="tab" role="tab">Resolution</a></li>
+               <li role="presentation" ><a href="#completeTicket" data-toggle="tab" role="tab">Complete Ticket</a></li>
+
+             </ul>
+
+           </div>
+
+    <div class="tab-content">
+      <div class="tab-pane fade active in" id="serviceTicketInfo">
+        <div class="update-work-order-body">
+
+        </div><!---end of st info-->
+      </div><!--end of tab 1-->
+      <div class="tab-pane fade" id="resolution">
+        <div class="update-work-order-body">
+                2
+        </div><!---end of resolution-->
+      </div><!---end of tab 2-->
+      <div class="tab-pane fade" id="completeTicket">
+        <div class="update-work-order-body">
+                3
+        </div><!---end of complete ticket-->
+      </div><!---end of tab 3-->
+    </div><!---end of update order tab content-->
+
        </div><!--end of search form container-->
-    </div><!--end of tab content-->
+    </div><!--end of tab content Testing Tab-->
 
   <div id="update-work-order" class="tab-pane fade">
     <div class="update-work-order-container">
