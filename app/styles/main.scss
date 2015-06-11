@@ -679,11 +679,10 @@ padding: 5px;
 
 }
 .action-button-container{
- padding: 10px 55px;
+ padding: 15px;
  width: 100%;
  height: auto;
- border-top-left-radius: 3px;
- border-top-right-radius: 3px;
+
 
 }
 
@@ -859,6 +858,10 @@ margin: 0;
 
    width: auto;
  }
+ i {position: absolute;
+   padding: 10px;
+   opacity: .4;
+ }
 }
 
 .alignright{
@@ -904,6 +907,9 @@ input, select{
 select{
   margin-top:0;
 }
+input{
+  text-indent: 15px;
+}
 
 }
 .alignright{
@@ -933,6 +939,10 @@ font-size: 12px;
  width:50%;
 
 
+}
+.create-lock{
+  padding: 15px;
+  font-size:18px;
 }
 .panel-heading a{
  padding-right: 20px;

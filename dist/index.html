@@ -80,13 +80,19 @@
                       <select class="form-control" required>
                         <option value="one">ATT Device Support Center</option>
                         <option value="two">--Default--</option>
-                      </select> </p>
+                      </select>
+
                   </div>
                   <div class="clearfix">
                     <p class="alignleft-dbl">Transaction ID:</p>
                     <p class="alignright-dbl"><input required> </p>
                   </div>
                 </div>
+                <div class="double-column">
+
+                  <i class="fa fa-lock create-lock"></i>
+
+
               </div>
               </section>
               <div class="clearfix"></div>
@@ -99,7 +105,7 @@
                    <div class="double-column">
                      <div class="clearfix">
                        <p class="alignleft-dbl">Customer Lookup:</p>
-                       <p class="alignright-dbl"><input> </p>
+                       <p class="alignright-dbl"><i class="fa fa-search"></i><input> </p>
                    </div>
                      <div class="clearfix">
                        <p class="alignleft-dbl">Full Name:</p>
@@ -128,11 +134,11 @@
                  <div class="double-column">
                    <div class="clearfix">
                      <p class="alignleft-dbl">Manufacturer:</p>
-                     <p class="alignright-dbl"><input required> </p>
+                     <p class="alignright-dbl"><i class="fa fa-search"></i><input required> </p>
                  </div>
                    <div class="clearfix">
                      <p class="alignleft-dbl">Model:</p>
-                     <p class="alignright-dbl"><input required> </p>
+                     <p class="alignright-dbl"><i class="fa fa-search"></i><input required> </p>
                    </div>
                    <div class="clearfix">
                      <p class="alignleft-dbl">IMEI #:</p>
@@ -212,9 +218,44 @@
                  </div>
                </div>
 
+               <div class="double-column">
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Headset Damage:</p>
+                   <p class="alignright-dbl">
+                     <select class="form-control" required>
+                       <option value="one">--Select--</option>
+
+                     </select> </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Under 14 Days:</p>
+                   <p class="alignright-dbl"><input type="checkbox"> </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Insurance on Mobile #:</p>
+                   <p class="alignright-dbl"><input type="checkbox"> </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Warranty Status</p>
+                   <p class="alignright-dbl">In Warranty</p>
+                 </div>
+               </div>
              </div><!---end of work order grid-->
 
            </dd>
+        </section>
+        <section>
+          <div class="action-button-container">
+             <div id="action-buttons">
+               <div style="float:left;">
+                 <button id="Finish-Repair-Button"type="button" class="btn btn-primary" style=" margin-right:20px"><i class="fa fa-flask"></i>Begin Test</button>
+                 <button id="Expedite-Button" type="button" class="btn btn-primary" style=" margin-right:20px"><i class="fa fa-ticket"></i>Quick Ticket</button>
+
+               </div>
+
+          </div>
+        </div>
+
         </section>
 
       </div><!---end of work order body-->
