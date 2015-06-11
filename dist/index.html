@@ -318,6 +318,218 @@
     <div class="tab-content">
       <div class="tab-pane fade active in" id="serviceTicketInfo">
         <div class="update-work-order-body">
+          <section>
+            <dt><h3 class="panel-title small grid-panel">
+                <i class="fa fa-minus-circle"></i>Diagnostics</h3>
+            </dt>
+            <dd>
+              <div id="static-work-order-info" class="work-order-info-grid clearfix" >
+                <button class="btn btn-primary" style="margin:8px;">Update Diagnostics</button>
+                <span id="helpBlock" class="help-block">Run Diagnostics application and try again.</span>
+              </div>
+            </dd>
+          </section>
+          <section>
+            <dt><h3 class="panel-title small grid-panel">
+                <i class="fa fa-minus-circle"></i>Summary</h3>
+            </dt>
+            <dd>
+              <div id="static-work-order-info" class="work-order-info-grid clearfix">
+                <div class="double-column">
+                  <div class="clearfix">
+                    <p class="alignleft-dbl">Customer Full Name:</p>
+                    <p class="alignright-dbl"> Joshna Lal
+                     </p>
+                  </div>
+                  <div class="clearfix">
+                      <p class="alignleft-dbl">Customer Mobile Phone:</p>
+                      <p class="alignright-dbl">7708829478</p>
+                  </div>
+                  <div class="clearfix">
+                      <p class="alignleft-dbl">Program:</p>
+                      <p class="alignright-dbl">ATT Device SUpport Center</p>
+                  </div>
+                  <div class="clearfix">
+                      <p class="alignleft-dbl">Warranty Status:</p>
+                      <p class="alignright-dbl">Out of Warranty</p>
+                  </div>
+                  <div class="clearfix">
+                      <p class="alignleft-dbl">Manufacturer:</p>
+                      <p class="alignright-dbl">Samsung</p>
+                  </div>
+                </div>
+                <div class="double-column">
+                  <div class="clearfix">
+                      <p class="alignleft-dbl">Model:</p>
+                      <p class="alignright-dbl">Galaxy S5 Black</p>
+                  </div>
+                  <div class="clearfix">
+                      <p class="alignleft-dbl">IMEI #:</p>
+                      <p class="alignright-dbl">354691063361297</p>
+                  </div>
+                  <div class="clearfix">
+                      <p class="alignleft-dbl">Warranty End Date:</p>
+                      <p class="alignright-dbl">2/11/2015</p>
+                  </div>
+                  <div class="clearfix">
+                      <p class="alignleft-dbl">In Warranty By Date:</p>
+                      <p class="alignright-dbl" style="color:red;">Out of Warranty</p>
+                  </div>
+                </div>
+              </div>
+            </dd>
+          </section>
+          <section>
+           <dt><h3 class="panel-title small grid-panel">
+               <i class="fa fa-minus-circle"></i>Service Ticket</h3>
+           </dt>
+           <dd>
+             <div id="static-work-order-info" class="work-order-info-grid clearfix">
+               <div class="double-column">
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Customer Arrival Time:</p>
+                   <p class="alignright-dbl">
+                     <select class="form-control" required>
+                       <option value="one">--Select--</option>
+
+                     </select> </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Referral Chanel:</p>
+                   <p class="alignright-dbl">
+                    <select class="form-control" required>
+                       <option value="one">WSC</option>
+
+                     </select>
+                   </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Referral Location:</p>
+                   <p class="alignright-dbl">
+                    <select class="form-control" >
+                       <option value="one">WSC</option>
+
+                     </select>
+                   </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Mis-referral Reason:</p>
+                   <p class="alignright-dbl">
+                    <select class="form-control" >
+                       <option value="one">Not Mis-referred</option>
+
+                     </select>
+                   </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Store Rep ATTUID:</p>
+                   <p class="alignright-dbl"><input> </p>
+                 </div>
+               </div>
+
+               <div class="double-column">
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Headset Damage:</p>
+                   <p class="alignright-dbl">
+                     <select class="form-control" required>
+                       <option value="one">None</option>
+
+                     </select> </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Under 14 Days:</p>
+                   <p class="alignright-dbl"><input type="checkbox"> </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Insurance on Mobile #:</p>
+                   <p class="alignright-dbl"><input type="checkbox"> </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Warranty Status:</p>
+                   <p class="alignright-dbl">In Warranty</p>
+                 </div>
+               </div>
+             </div><!---end of work order grid-->
+
+           </dd>
+        </section>
+        <section>
+          <div class="action-button-container">
+             <div id="action-buttons">
+               <div style="float:left; margin-bottom:15px;">
+                 <button id="Finish-Repair-Button"type="button" class="btn btn-primary" style=" margin-right:20px"><i class="fa fa-flask"></i>Begin Test</button>
+               </div>
+
+          </div>
+        </div>
+
+        </section>
+        <section>
+          <div class="clearfix">
+          <ul class="nav nav-tabs product-table" id="product-table" style="margin-top:10px;">
+            <li class="active"><a href="#1" data-toggle="tab" aria-expanded="true">Status History <span class="badge">3</span></a>
+            </li>
+            <li><a href="#2" data-toggle="tab" aria-expanded="true">Notes<span class="badge">1</span></a>
+           </li>
+           <li><a href="#3" data-toggle="tab" aria-expanded="true">Service Bulletins<span class="badge">2</span></a>
+           </li>
+           <li><a href="#4" data-toggle="tab" aria-expanded="true">Product WO History</a>
+           </li>
+           <li><a href="#5" data-toggle="tab" aria-expanded="true">Customer WO History</a>
+           </li>
+          </ul>
+        </div><!---end of clearfix-->
+          <div class="tab-content">
+            <div class="tab-pane active" id="1">
+              <table class="table table-condensed volumes small referenceTable">
+               <thead>
+                 <tr>
+                  <th>Update Time Local</th>
+                  <th>Status</th>
+                  <th>User Name</th>
+
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>2/16/2015 2:35 PM</td>
+                 <td>!QA Passed</td>
+                 <td>Mark Riley</td>
+                </tr>
+                <tr>
+                 <td>2/16/2015 11:13 AM</td>
+                 <td>*Software Passed</td>
+                 <td>Steve Teel</td>
+
+                </tr>
+                <tr>
+                 <td>2/13/2015 5:39 PM</td>
+                 <td>Awaiting Parts</td>
+                 <td>Maggie Martin</td>
+
+                </tr>
+
+               </tbody>
+              </table>
+              <div class="table-footer small clearfix">
+              </div>
+            </div>
+            <div class="tab-pane" id="2">
+              2
+            </div>
+            <div class="tab-pane" id="3">
+              3
+            </div>
+            <div class="tab-pane" id="4">
+              4
+            </div>
+            <div class="tab-pane" id="5">
+              5
+            </div>
+          </div>
+
+
+        </section>
 
         </div><!---end of st info-->
       </div><!--end of tab 1-->
