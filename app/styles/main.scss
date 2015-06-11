@@ -713,7 +713,7 @@ padding: 5px;
 //  border: 1px solid #ccc;
 //  transition: border-color ease-in-out .3s,box-shadow ease-in-out .3s;
 display: block;
-width: 90%;
+width: 100%;
 height: 34px;
 padding: 6px 12px;
 font-size: 14px;
@@ -846,9 +846,10 @@ border: 2px solid #ddd;
  float: left;
  font-size: 14px;
  width: 40%;
- height: 20px;
+ line-height: 20px;
 margin: 0;
  text-align: right;
+
 
 
 }
@@ -894,9 +895,10 @@ line-height: 16px;
  font-weight: normal;
 margin-top:5px;
 font-size: 14px;
+line-height:20px;
 
 input, select{
-  width: 90%;
+  width: 100%;
 
 }
 select{
@@ -1313,6 +1315,7 @@ table .fa-sort, .fa-sort-desc, .fa-sort-asc{
 
 
  input:required,
+ select:required,
  textarea:required {
    border-left: 2px solid #c12e2a !important;
  }

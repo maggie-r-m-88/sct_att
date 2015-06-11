@@ -77,14 +77,14 @@
                   <div class="clearfix">
                     <p class="alignleft-dbl">Program ID:</p>
                     <p class="alignright-dbl">
-                      <select class="form-control">
+                      <select class="form-control" required>
                         <option value="one">ATT Device Support Center</option>
                         <option value="two">--Default--</option>
                       </select> </p>
                   </div>
                   <div class="clearfix">
                     <p class="alignleft-dbl">Transaction ID:</p>
-                    <p class="alignright-dbl"><input> </p>
+                    <p class="alignright-dbl"><input required> </p>
                   </div>
                 </div>
               </div>
@@ -103,13 +103,13 @@
                    </div>
                      <div class="clearfix">
                        <p class="alignleft-dbl">Full Name:</p>
-                       <p class="alignright-dbl"><input> </p>
+                       <p class="alignright-dbl"><input required> </p>
                      </div>
                    </div>
                    <div class="double-column">
                      <div class="clearfix">
                        <p class="alignleft-dbl">Mobile Phone:</p>
-                       <p class="alignright-dbl"><input> </p>
+                       <p class="alignright-dbl"><input required> </p>
                      </div>
                      <div class="clearfix">
                        <p class="alignleft-dbl">Company Name:</p>
@@ -128,15 +128,15 @@
                  <div class="double-column">
                    <div class="clearfix">
                      <p class="alignleft-dbl">Manufacturer:</p>
-                     <p class="alignright-dbl"><input> </p>
+                     <p class="alignright-dbl"><input required> </p>
                  </div>
                    <div class="clearfix">
                      <p class="alignleft-dbl">Model:</p>
-                     <p class="alignright-dbl"><input> </p>
+                     <p class="alignright-dbl"><input required> </p>
                    </div>
                    <div class="clearfix">
                      <p class="alignleft-dbl">IMEI #:</p>
-                     <p class="alignright-dbl"><input> </p>
+                     <p class="alignright-dbl"><input required> </p>
                    </div>
                    <div class="clearfix">
                      <p class="alignleft-dbl">Warranty Start Date:</p>
@@ -150,7 +150,7 @@
                  <div class="double-column">
                    <div class="clearfix">
                      <p class="alignleft-dbl">Purchase Date:</p>
-                     <p class="alignright-dbl"><input> </p>
+                     <p class="alignright-dbl"><input style="margin-top:0"> </p>
                    </div>
                    <div class="clearfix">
                      <p class="alignleft-dbl">Refurbished Device?:</p>
@@ -169,6 +169,50 @@
                <i class="fa fa-minus-circle"></i>Service Ticket</h3>
            </dt>
            <dd>
+             <div id="static-work-order-info" class="work-order-info-grid clearfix">
+               <div class="double-column">
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Customer Arrival Time:</p>
+                   <p class="alignright-dbl">
+                     <select class="form-control" required>
+                       <option value="one">--Select--</option>
+
+                     </select> </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Referral Chanel:</p>
+                   <p class="alignright-dbl">
+                    <select class="form-control" required>
+                       <option value="one">--Select--</option>
+
+                     </select>
+                   </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Referral Location:</p>
+                   <p class="alignright-dbl">
+                    <select class="form-control" >
+                       <option value="one">--Select--</option>
+
+                     </select>
+                   </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Mis-referral Reason:</p>
+                   <p class="alignright-dbl">
+                    <select class="form-control" >
+                       <option value="one">--Select--</option>
+
+                     </select>
+                   </p>
+                 </div>
+                 <div class="clearfix">
+                   <p class="alignleft-dbl">Store Rep ATTUID:</p>
+                   <p class="alignright-dbl"><input> </p>
+                 </div>
+               </div>
+
+             </div><!---end of work order grid-->
 
            </dd>
         </section>
