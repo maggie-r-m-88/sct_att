@@ -51,9 +51,9 @@
          <ul class="nav nav-tabs">
               <li class="active"><a data-toggle="tab" href="#create-wo-tab"><i class="fa fa-file-o"></i>Create Service Ticket</a></a></li>
 
-              <li><a data-toggle="tab" href="#update-work-order"><i class="fa fa-pencil-square-o"></i>Update Service Ticket</a></li>
+              <!--<li><a data-toggle="tab" href="#update-work-order"><i class="fa fa-pencil-square-o"></i></a></li>-->
 
-              <li><a data-toggle="tab" href="#search-form"><i class="fa fa-pencil-square-o"></i>Testing</a></li>
+              <li><a data-toggle="tab" href="#search-form"><i class="fa fa-pencil-square-o"></i>Update Service Ticket</a></li>
 
 
 
@@ -83,7 +83,7 @@
                          <option value="one">ATT Device Support Center</option>
                          <option value="two">--Default--</option>
                        </select>
-
+ </p>
                    </div>
                    <div class="clearfix">
                      <p class="alignleft-dbl">Transaction ID:</p>
@@ -309,7 +309,7 @@
               <ul class="nav nav-pills progress-tabs" >
                 <li role="presentation" class="active" ><a href="#serviceTicketInfo" data-toggle="tab" role="tab">Service Ticket Info</a></li>
                 <li role="presentation" ><a href="#resolution" data-toggle="tab" role="tab">Resolution</a></li>
-                <li role="presentation" ><a href="#completeTicket" data-toggle="tab" role="tab">Complete Ticket</a></li>
+                <li role="presentation" ><a href="#resolution" data-toggle="tab" role="tab">Complete Ticket</a></li>
 
               </ul>
 
@@ -581,7 +581,261 @@
        </div><!--end of tab 1-->
        <div class="tab-pane fade" id="resolution">
          <div class="update-work-order-body">
-                 2
+           <section>
+             <dt><h3 class="panel-title small grid-panel">
+                 <i class="fa fa-minus-circle"></i>Diagnostics</h3>
+             </dt>
+             <dd>
+               <div id="static-work-order-info" class="work-order-info-grid clearfix" >
+                 <button class="btn btn-primary" style="margin:8px;">Update Diagnostics</button>
+                 <span id="helpBlock" class="help-block" style="color:black;">Transaction 20352 run on 5/18/2015 4:56:21 PM</span>
+               </div>
+             </dd>
+           </section>
+           <section>
+             <dt><h3 class="panel-title small grid-panel">
+                 <i class="fa fa-minus-circle"></i>Summary</h3>
+             </dt>
+             <dd>
+               <div id="static-work-order-info" class="work-order-info-grid clearfix">
+                 <div class="double-column">
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Customer Full Name:</p>
+                     <p class="alignright-dbl">
+                       Sam Rapp
+                     </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Customer Mobile Phone:</p>
+                     <p class="alignright-dbl">
+                      5047561113
+                     </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Program:</p>
+                     <p class="alignright-dbl">
+                      ATT Device Support Center
+                     </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Warranty Status:</p>
+                     <p class="alignright-dbl">
+                     In Warranty
+                     </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Manufacturer:</p>
+                     <p class="alignright-dbl">Samsung</p>
+                   </div>
+                 </div>
+                 <div class="double-column">
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Model:</p>
+                     <p class="alignright-dbl">
+                       Galaxy Note Edge Black
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">IMEI:</p>
+                     <p class="alignright-dbl">
+                      355072060546405
+                     </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Warranty End Date:</p>
+                     <p class="alignright-dbl">
+                    12/5/2015
+                     </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">In Warranty By Date:</p>
+                     <p class="alignright-dbl">
+                     In Warranty
+                     </p>
+                   </div>
+                 </div>
+               </div><!---end of grid-->
+
+             </dd>
+           </section>
+           <section>
+             <dt><h3 class="panel-title small grid-panel">
+                 <i class="fa fa-minus-circle"></i>Device Issue</h3>
+             </dt>
+             <dd>
+               <div id="static-work-order-info" class="work-order-info-grid clearfix">
+                 <div class="double-column">
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">High Level Problem:</p>
+                     <p class="alignright-dbl">
+                       <i class="fa fa-search"></i><input required>
+                     </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Detailed Description:</p>
+                     <p class="alignright-dbl">
+                       <i class="fa fa-search"></i><input required>
+                     </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Note:</p>
+                     <p class="alignright-dbl">
+                    <textarea class="form-control"></textarea>
+                      </p>
+                   </div>
+                 </div>
+               </div><!---end of grid-->
+             </dd>
+           </section>
+           <section>
+               <dt><h3 class="panel-title small grid-panel">
+                   <i class="fa fa-minus-circle"></i>Service Ticket</h3>
+               </dt>
+               <dd>
+                 <div id="static-work-order-info" class="work-order-info-grid clearfix">
+                   <div class="double-column">
+                     <div class="clearfix">
+                       <p class="alignleft-dbl">Performed SW Upgrade:</p>
+                       <p class="alignright-dbl">
+                         <select class="form-control" required>
+                           <option value="one">--Select--</option>
+                           <option value="two">--Default--</option>
+                         </select>
+                       </p>
+
+                     </div>
+                     <div class="clearfix">
+                       <p class="alignleft-dbl">Flag Device for Inspection:</p>
+                       <p class="alignright-dbl"><input type="checkbox">
+                      </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Did Troubleshooting resolve issue(s)?:</p>
+                     <p class="alignright-dbl">
+                       <select class="form-control" required>
+                         <option value="one">--Select--</option>
+                       </select>
+                     </p>
+
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Escalation</p>
+                     <p class="alignright-dbl">
+                       <input type="checkbox">
+                     </p>
+                   </div>
+                 </div>
+                 <div class="double-column">
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Resolution Code:</p>
+                     <p class="alignright-dbl">
+                       <select class="form-control" required>
+                         <option value="one">Completed Accessory Shipment Online</option>
+                         <option value="two">--Default--</option>
+                       </select>
+                     </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Replaced SIM:</p>
+                     <p class="alignright-dbl">
+                       <select class="form-control" required>
+                         <option value="one">--Select--</option>
+
+                       </select>
+                     </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Charge Port Cleaned:</p>
+                     <p class="alignright-dbl">
+                       <select class="form-control" required>
+                         <option value="one">--Select--</option>
+
+                       </select>
+                     </p>
+                   </div>
+                   <div class="clearfix">
+                     <p class="alignleft-dbl">Master Reset Performed?:</p>
+                     <p class="alignright-dbl">
+                       <select class="form-control" required>
+                         <option value="one">--Select--</option>
+
+                       </select>
+                     </p>
+                   </div>
+
+
+                 </div>
+                 </div><!---end of grid-->
+              </dd>
+           </section>
+           <section>
+             <dd>
+             <div class="action-button-container">
+                <div id="action-buttons">
+                  <div style="float:left;margin-bottom:15px;">
+                    <button id="Finish-Repair-Button"type="button" class="btn btn-primary" style=" margin-right:10px">Back</button>
+                    <button id="Expedite-Button" type="button" class="btn btn-primary" style=" margin-right:10px">Hold Tickets</button>
+                    <button type="button" class="btn btn-primary " style=" margin-right:10px">Advanced Ticket</button>
+                    <button type="button" class="btn btn-danger" style=" margin-right:10px">Delete Ticket</button>
+                  </div>
+                </div>
+              </div>
+            </dd>
+           </section>
+           <section>
+               <div class="clearfix">
+               <ul class="nav nav-tabs product-table" id="product-table" style="margin-top:10px;">
+                 <li class="active"><a href="#1" data-toggle="tab" aria-expanded="true">Status History <span class="badge">4</span></a>
+                 </li>
+                <li><a href="#1" data-toggle="tab" aria-expanded="true">Service Bulletins<span class="badge">2</span></a>
+                </li>
+                <li><a href="#1" data-toggle="tab" aria-expanded="true">Customer WO History</a>
+                </li>
+               </ul>
+             </div><!---end of clearfix-->
+             <div class="tab-content">
+               <div class="tab-pane active" id="1">
+               <table class="table table-condensed volumes referenceTable">
+                <thead>
+                  <tr>
+                   <th>Update Time Local</th>
+                   <th>Status</th>
+                   <th>User Name</th>
+
+                 </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                  <td>2/16/2015 2:35 PM</td>
+                  <td>Edit Resolution</td>
+                  <td>Mark Riley</td>
+                 </tr>
+                 <tr>
+                  <td>2/16/2015 11:13 AM</td>
+                  <td>Close Ticket</td>
+                  <td>Steve Teel</td>
+
+                 </tr>
+                 <tr>
+                  <td>2/13/2015 5:39 PM</td>
+                  <td>Quick Ticket</td>
+                  <td>Maggie Martin</td>
+
+                 </tr>
+
+                 <tr>
+                  <td>2/10/2015 1:08 AM</td>
+                  <td>Customer Arrival Time</td>
+                  <td>Maggie Martin</td>
+
+                 </tr>
+
+                </tbody>
+               </table>
+               <div class="table-footer small clearfix">
+               </div>
+             </div>
+             </div>
+           </section>
          </div><!---end of resolution-->
        </div><!---end of tab 2-->
        <div class="tab-pane fade" id="completeTicket">
